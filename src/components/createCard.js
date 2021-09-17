@@ -107,7 +107,7 @@ const Create = () => {
                     </form>    
                 </div>
                 <div>
-                    <View setCurrentId={setCurrentId} />
+                    <View className="createGrid" setCurrentId={setCurrentId} />
                 </div>
             </div>
         </div>

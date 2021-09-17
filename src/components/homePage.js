@@ -19,6 +19,9 @@ const HomePage = () => {
 
                     </h2>
                     <h6>Create flashcards to quiz yourself, designed to help you pass all your tests!</h6>
+                    <Link style={{alignItems:'center'}} to="/create">
+                    <button >Start Creating!</button>
+                    </Link>
                 </div>
                 <div>
                     <img className="svg" src={SVG} />

@@ -17,7 +17,7 @@ const CardGrid = ({setCurrentId}) => {
       )
     } else {
       return(
-        <Grid  style={{  margin: '20px'}} container alignItems="stretch" spacing={3}>
+        <Grid style={{ display:'flex', justifyContent:'center', margin: '20px'}} container alignItems="stretch" spacing={3}>
             {cards[0].map((card) => (
               <Grid key={card._id} item sm={4}>
                 <Card classname="grid" card={card} setCurrentId={setCurrentId} />
@@ -29,7 +29,7 @@ const CardGrid = ({setCurrentId}) => {
   }
   
     return (
-      <div>
+      <div classname="cardGrid">
           {gridDisplay()}
       </div>
     )

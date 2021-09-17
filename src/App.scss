@@ -29,6 +29,10 @@ body {
     margin-top: 80px;
   }
 
+  button {
+    display: none;
+  }
+
   .sloganWrap img{
     width: 60%;
   }
@@ -122,4 +126,160 @@ body {
 
 .contactWrapper{
   text-align: -webkit-center;
+}
+
+@media screen and (max-width: 600px){
+  body {
+    background-image: url(./img/BG.svg);
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  .homeWrapper{
+  
+    text-align: center;
+    margin-top: 50px;
+  
+    .Logo{
+      width: 300px;
+      margin-bottom: 20px;
+      margin-left: 42px;
+    }
+  
+    a {
+      display: flex;
+      flex-direction: column;
+      margin: 15px;
+      color: black;
+      font-family: 'Kaisei HarunoUmi', serif;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  
+    .sloganWrap{
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+    }
+  
+    .sloganWrap img{
+      display: none;
+    }
+
+    button {
+      display: inline;
+      border-radius: 3px;
+      text-decoration: none;
+      align-items: center;
+      border: none;
+      background-color: rgb(250, 71, 71);
+      width: 50%;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      padding: 8px 10px;
+    }
+
+    button:hover{
+      color: rgb(250, 71, 71);
+      background-color: rgb(255, 255, 255);
+    }
+  
+    .sloganText{
+      margin: 0;
+      padding: 15px;
+
+      font-family: 'Kaisei Tokumin', serif;
+      box-shadow: black 1px;
+      text-align: center;
+  
+      h2{
+        font-size: 35px;
+  
+      }
+    }
+   
+  
+    .sloganText h6{
+      font-weight: 100;
+      font-family: 'Kaisei Tokumin', serif;
+      font-size: 18px;
+    }
+  
+  }
+  
+  .createWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:Center;
+    margin: 0 0 20px 0;  
+
+    .input{
+      width: 100%;
+      max-height: 100%;
+      
+    }
+  
+  
+    .dropdown {
+      margin: 20px 0 20px 0;
+    }
+  
+    .prepend {
+      width: 85px;
+      text-align: center;
+    }
+    .inputs{
+      width: 80%;
+      max-height: 360px;
+      padding: 40px 20px 30px 20px;
+      border: 1px solid rgba(85, 85, 85, 0.705);
+      background-color: rgba(255, 255, 255, 0.638);
+      margin-bottom: 50px;
+
+      box-shadow: 0px 1px 15px 1px rgb(162, 162, 162);
+    }
+  
+    h4{
+      margin-bottom: 25px;
+    }
+  
+    .submitBtn {
+      margin-top: 25px;
+    }
+  }
+
+  
+  .cardTemp{
+    width: auto;
+    height:auto;
+  }
+
+  .MuiGrid-item {
+    margin: 0px auto !important;
+  }
+  
+  .MuiGrid-spacing-xs-3 {
+    width: 300px !important;
+    margin: 0 auto !important;
+  }
+
+  .cardBtn{
+    margin: 0px 10px 0px 10px;
+    
+  }
+  
+  .contactPage{
+    padding: 20px;
+    text-align: -webkit-center;
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(245, 245, 245, 0.412);
+    box-shadow: 0px 1px 15px 1px rgb(162, 162, 162);
+    margin-top: 55px;
+  }
+  
+  .contactWrapper{
+    text-align: -webkit-center;
+  }
 }

@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <div className="homeWrapper">
-            <img className="Logo" src={Logo1} />
+            <Link to="/"><img className="Logo" src={Logo1} /></Link>
 
             <div className="navBar">
                 <Link to="/" ><a href="#!"> Home</a></Link>
